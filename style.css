@@ -1,10 +1,29 @@
-#contato {
-    background-color: rgb(132, 200, 218);
+
+h1 {
+    display: flex;
     text-align: center;
-    border-radius: 10%;
-    padding-top: 7px;
-    padding-bottom: 9px;
-    font-family: Roboto;
-    width: 50%;
+    background-color: antiquewhite;
+    justify-content: center;
+}
+
+#lista {
+    background-color: bisque;
+    list-style-type: none;
+    display: flex;
+    justify-content: end;
+}
+
+nav {
+    background-color: darkgray;
+}
+
+body {
+    background-color:floralwhite;
+}
+
+___________________________________________
+
+table {
+    background-color: black;
 }
 
