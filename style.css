@@ -3,25 +3,35 @@
     padding: 0;
 }
 
+body {
+    border: 2px solid black;
+    width: 101.6vh;
+    height: 100vh;
+}
+
 header nav img {
-    border-radius: 30%;
+    border-radius: 44%;
     border: 2px solid darkkhaki;
     width: 5em;
     height: 5em;
     margin: 1em;
-    padding: 1em;
+    padding: 1em;   
 }
 
 header {
     background-color: antiquewhite;
     border: 2px solid darkgoldenrod;
+    margin: 0.5vh;
     width: 100vh;
+    height: 15vh;
 }
 
 header nav {
     display: flex;
     justify-content: space-between;
-    border: 1px solid darkolivegreen;
+    border: 2px solid darkolivegreen;
+    width: 100vh;
+    height: 15vh;
 }
 
 header nav ul {
@@ -31,8 +41,8 @@ header nav ul {
     border: 3px solid darkslategrey;
     border-radius: 10px;
     background-color: darkslategray;
-    margin  : 0.5em;
-    padding: 0.6em;
+    margin: 1.5em;
+    padding: 1em;
     width: fit-content;
     margin-top: 3em;
     margin-bottom: 3em;
@@ -46,4 +56,26 @@ header nav ul li {
     text-align: center;
     margin: 5px;
     padding: 5px;
+}
+
+
+/** segunda parte do CSS da PÁGINA CONTATO **/
+
+table {
+    border: 2px solid darkgoldenrod;
+    display: flex;
+    justify-content: center;
+}
+
+table td {
+    display: flex;
+    border: 2px solid darkgray;
+}
+
+.imgfundo {
+    background-image: url(imagens/logo.png);
+    background-size: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color:blanchedalmond;
 }
