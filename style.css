@@ -79,3 +79,18 @@ table td {
     background-repeat: no-repeat;
     background-color:blanchedalmond;
 }
+
+
+/** FONTES  **/
+
+.font1 {
+font-family: 'Krona One', sans-serif;
+}
+
+.fonte2 {
+font-family: 'Maven Pro', sans-serif;
+}
+
+.fonte3 {
+font-family: 'Roboto', sans-serif;
+}
