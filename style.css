@@ -10,11 +10,6 @@ table {
 
 }
 
-td {
-    border-spacing: 1rem;
-    border: 1px solid black;
-}
-
 .infos {
     display: flex;
     flex-direction: column;
