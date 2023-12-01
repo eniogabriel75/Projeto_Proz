@@ -1,0 +1,26 @@
+table {
+    background-color: #DED0B6;
+    /* display: flex; */
+    /* justify-content: center; */
+    margin: auto;
+    border-radius: 5%;
+    border: 1px solid #FAEED1;
+    padding: 1em;
+    text-align: center;
+
+}
+
+td {
+    border-spacing: 1rem;
+    border: 1px solid black;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.infos p {
+    margin: 0;
+}
