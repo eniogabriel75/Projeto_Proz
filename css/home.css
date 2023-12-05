@@ -1,10 +1,16 @@
 h1 {
-  font-size: 35px;
+  font-size: 28px;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 18px;
 }
+.img1:hover {
+  box-shadow: 2px 2px #bbab8c, 3px 3px #bbab8c, 4px 4px #bbab8c;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+}
+
 .img1 {
   width: 500px;
   height: 500px;
@@ -30,9 +36,10 @@ h3 {
   padding: 80px 15px;
   justify-content: space-between;
 }
+
 .boxes button {
   border-radius: 15px;
-  background-color: #ead7bb;
+  background-color: #bca37f;
   width: 100px;
   height: 40px;
   margin-left: 20px;
@@ -47,19 +54,28 @@ h3 {
   width: 460px;
   border-radius: 25px;
   float: inline-start;
-  background-color: #bca37f;
+  background-color: #ead7bb;
   margin: 5px 5px 100px 5px;
   padding: 15px 15px;
+}
+.box_1:hover {
+  box-shadow: 1px 1px #bbab8c, 2px 2px #bbab8c, 3px 3px #bbab8c;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
 }
 .box_2 {
   width: 460px;
   border-radius: 25px;
   float: inline-end;
-  background-color: #bca37f;
+  background-color: #ead7bb;
   margin: 120px 5px 5px 5px;
   padding: 15px 15px;
 }
-
+.box_2:hover {
+  box-shadow: 1px 1px #bbab8c, 2px 2px #bbab8c, 3px 3px #bbab8c;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+}
 h2,
 p {
   padding-left: 20px;
@@ -101,4 +117,27 @@ a:visited {
   .box_2 {
     width: 80%;
   }
+}
+
+.floating-button {
+  position: absolute;
+  bottom: 360px;
+  right: 570px;
+  background-color: #ded0b6;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+}
+
+.floating-button:hover {
+  box-shadow: 2px 2px #bbab8c, 3px 3px #bbab8c, 4px 4px #bbab8c;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
 }
