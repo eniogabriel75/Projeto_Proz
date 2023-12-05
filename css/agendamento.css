@@ -1,0 +1,31 @@
+h1 {
+  display: flex;
+  justify-content: center;
+}
+form {
+  display: grid;
+  gap: 20px;
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 120px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #113946;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
