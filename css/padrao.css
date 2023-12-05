@@ -1,11 +1,13 @@
 /* Fonte padrão */
 @import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@600&family=Mooli&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
 /* CSS padrão geral de todas as páginas */
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Krona One", sans-serif;
+  font-family: "mooli", sans-serif;
   background-color: #fdf7e4;
 }
 .container {
@@ -35,6 +37,7 @@ img {
 /* CSS padrão do Header */
 
 nav {
+  font-family: "Krona One", sans-serif;
   background-color: #ead7bb;
   margin: auto;
   padding: 10px 10px;
