@@ -1,0 +1,192 @@
+.mainLocalizacao{
+    text-align: center;
+    background-color: #f5f5dc;
+}
+
+.buttonLocalizacao{
+  background-color: #ffffff; /* Green */
+  border-radius: 5%;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 200px;
+}
+
+.mainLocalizacao h1{
+    background-color: rgb(230, 218, 218);
+    font-family: "Times New Roman", Times, serif;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Krona One", sans-serif;
+    background-color: #fdf7e4;
+  }
+  .container {
+    max-width: 1100px;
+    width: 80%;
+    margin: 32px auto;
+    display: grid;
+    gap: 24px;
+  }
+  ul,
+  ol {
+    list-style: none;
+  }
+  p {
+    font-size: 1em;
+  }
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* CSS padrão do Header */
+  
+  nav {
+    width: 1500px;
+    background-color: #ead7bb;
+    margin: auto;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  nav img {
+    padding-right: 35px;
+  }
+  nav a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  nav a:link {
+    color: inherit;
+  }
+  
+  nav a:visited {
+    color: inherit;
+  }
+  
+
+  /* CSS padrão do Footer */
+  footer {
+    background-color: #ead7bb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 15px;
+  }
+  footer p {
+    font-size: 12px;
+    padding: 0px 20px;
+    margin: 0px 20px;
+  }
+
+
+  /* Fonte padrão */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
+/* CSS padrão geral de todas as páginas */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Krona One", sans-serif;
+  background-color: #fdf7e4;
+}
+.container {
+  max-width: 1100px;
+  width: 80%;
+  margin: 32px auto;
+  display: grid;
+  gap: 24px;
+}
+ul,
+ol {
+  list-style: none;
+}
+p {
+  font-size: 1em;
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* CSS padrão do Header */
+
+nav {
+  background-color: #ead7bb;
+  margin: auto;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav img {
+  padding-right: 35px;
+}
+nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav a:link {
+  color: inherit;
+}
+
+nav a:visited {
+  color: inherit;
+}
+nav ul li {
+  font-size: 22px;
+  display: inline-block;
+  border-right: 2px solid #113946;
+  margin-right: 5px;
+  padding-right: 5px;
+  margin-left: 5px;
+}
+nav ul li:last-child {
+  border-right: none;
+}
+nav ul {
+  padding: 0;
+  text-align: center;
+}
+
+/* CSS padrão do Footer */
+footer {
+  height: 40px;
+  background-color: #ead7bb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 15px;
+}
+footer p {
+  font-size: 12px;
+  padding: 0px 20px;
+  margin: 0px 20px;
+}
