@@ -85,3 +85,8 @@
   border: solid 1px;
   margin: 10px;
 }
+/*Contralizando titulo----feedback*/
+main h1 {
+  display: flex;
+  justify-content: center;
+}
