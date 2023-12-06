@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./imagens/favicon.png"
-    />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="padrao.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Maven+Pro&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./imagens/favicon.png">
     <title>Dra. Moura Estética e Saúde Integrativa</title>
   </head>
   <body>
@@ -21,64 +21,39 @@
           width="100px"
           height="100px"
         />
-        <h1>Clínica Estética e Saúde Integrativa</h1> 
-        <ul id="lista">
-          <li><a href="index.html">Home</a></li>
+        <ul>
+          <li class="current"><a href="index.html">Home</a></li>
           <li><a href="procedimentos.html">Procedimentos</a></li>
           <li><a href="contato.html">Contato</a></li>
           <li><a href="quemsomos.html">Quem Somos</a></li>
+          <li><a href="profissionais.html"> Nossos Profissionais</a></li>
           <li><a href="localizacao.html">Localizacao</a></li>
         </ul>
       </nav>
+          
     </header>
-    <table id="table">
-      <tr>
-        <td colspan="2">Talvez aqui tenha uma foto minha furando pessoas</td>
-      </tr>
-      <tr id="contato">
-        <td colspan="1" align="center">
-          <div id="contato">
-            <h2><strong>CONTATO</strong></h2>
-            <p>email</p>
-            <h3>emaildadoutora@email.com</h3>
-            <p>telefone</p>
-            <h3>(+55) XX XXXXX-XXXX</h3>
-          </div>
-        </td>
-      </tr>
-      <tr id="forms">
-        <td colspan="1">
-          <div id="forms">
-            <h2 align="center">Formulário para Contato</h2>
-            <form action="/submit-form" method="get">
-              <h4>Nome</h4>
-              <input
-                type="text"
-                name="nome"
-                id="name"
-                placeholder="Nome"
-              /><br />
-              <h4>Idade</h4>
-              <br />
-              <input
-                type="number"
-                name="idade"
-                id="idade"
-                placeholder="Idade"
-              />
-              <h4>E-mail</h4>
-              <br />
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="E-mail"
-              />
-            </form>
-          </div>
-        </td>
-      </tr>
-    </table>
+    <div>
+      <div class="contato">
+        <h1 class="titulo-contato">Contato</h1>
+        <p class="tipo-contato">Email: </p>
+        <p type="'link" class="info-contato">email.da.doutora@exemp.com</p>
+        <p class="tipo-contato">Telefone: </p>
+        <p class="info-contato">(+55) XX XXXXX-XXXX</p>
+        <p class="tipo-contato">Endereço: </p> 
+        <p class="info-contato">Aracaju - Sergipe</p>
+      </div>
+      <div class="chamadaAgendamento">
+        <span class="chamada-Agenda">Agende uma consulta gratuita!</span>
+      </div>
+      <div class="info-horarios">
+        <h2 class="horaFunciona">Horário de Funcionamento: </h2>
+        <p class="horarios">Segunda à Sexta - 07:00 às 20:00</p><br>
+        <p class="horarios">Sábado - 07:00 às 13:00</p> 
+      </div>
+      <p class="slogan">Estética e Saúde - Beleza que se sente!</p>
+    </div>
+    </div>
+    
     <footer>
       <p>
         Privacy Policy |​ Cookie Preferences | Copyright @2024 | Dra. Moura
