@@ -4,34 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Localização</title>
+    <link rel="stylesheet" href="./css/padrao.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./imagens/favicon.png"
+    />
   </head>
   <body>
     <header>
       <nav>
-        <img src="/imagens/logoClinica.PNG" alt="Logo clinica" />
+        <img
+          src="imagens/logo.png"
+          alt="Logo clinica"
+          width="100px"
+          height="100px"
+        />
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="quemsomos.html">Quem Somos</a></li>
-          <li><a href="ambiente.html">Nosso Ambiente</a></li>
-          <li><a href="profissionais.html">Nossos Profissionais</a></li>
+          <li class="current"><a href="index.html">Home</a></li>
           <li><a href="procedimentos.html">Procedimentos</a></li>
           <li><a href="contato.html">Contato</a></li>
+          <li><a href="quemsomos.html">Quem Somos</a></li>
+          <li><a href="profissionais.html"> Nossos Profissionais</a></li>
           <li><a href="localizacao.html">Localização</a></li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="mainLocalizacao">
       <h1>Localização</h1>
       <p>Aqui temos informações da localização da nossa clínica</p>
-      <img src="/imagens/mapaLocalizacao.PNG" alt="imgLocalizacaoMapa" />
+      <img src="imagens/mapaLocalizacao.PNG" alt="imgLocalizacaoMapa" />
       <p>Você pode clicar no botão abaixo para nos encontrar no Google Maps!</p>
-      <button>Localizar</button>
+      <a
+        href="https://www.google.com/maps/place/Aracaju,+SE/@-11.0123267,-37.0974914,13z/data=!4m6!3m5!1s0x71ab04015be27cd:0x804434fd92ec3b36!8m2!3d-10.9266526!4d-37.0729014!16zL20vMDFoeTg0?entry=ttu"
+        target="_blank"
+        ><button class="buttonLocalizacao">Localizar</button></a
+      >
     </main>
     <footer>
-      <p>
-        Privacy Policy |​ Cookie Preferences | Copyright @2024 | Dra. Moura
-        Estética e Saúde Integrativa. All Rights Reserved.
+      <p>Privacy Policy |​ Cookie Preferences</p>
+      <p class="p2">
+        | Copyright @2024 | Dra. Moura Estética e Saúde Integrativa. All Rights
+        Reserved.
       </p>
+          
     </footer>
   </body>
 </html>
