@@ -1,0 +1,23 @@
+.mainLocalizacao {
+  text-align: center;
+  background-color: #f5f5dc;
+}
+
+.buttonLocalizacao {
+  background-color: #ffffff; /* Green */
+  border-radius: 5%;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 200px;
+}
+
+.mainLocalizacao h1 {
+  background-color: rgb(230, 218, 218);
+  font-family: "Times New Roman", Times, serif;
+  padding: 0;
+  margin: 0;
+}
