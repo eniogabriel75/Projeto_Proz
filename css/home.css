@@ -1,0 +1,143 @@
+h1 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 18px;
+}
+.img1:hover {
+  box-shadow: 2px 2px #bbab8c, 3px 3px #bbab8c, 4px 4px #bbab8c;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+}
+
+.img1 {
+  width: 500px;
+  height: 500px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 40px;
+}
+
+.text1 {
+  padding-top: 270px;
+  float: left;
+  width: 50%;
+  margin: 10px 10px;
+}
+.text {
+  float: left;
+  width: 50%;
+  margin: 10px 10px;
+}
+
+.boxes {
+  display: flex;
+  padding: 80px 15px;
+  justify-content: space-between;
+}
+
+.boxes button {
+  border-radius: 15px;
+  background-color: #bca37f;
+  width: 100px;
+  height: 40px;
+  margin-left: 20px;
+  color: #113946;
+}
+.boxes button a {
+  font-weight: bold;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+.box_1 {
+  width: 460px;
+  border-radius: 25px;
+  float: inline-start;
+  background-color: #ead7bb;
+  margin: 5px 5px 100px 5px;
+  padding: 15px 15px;
+}
+.box_1:hover {
+  box-shadow: 1px 1px #bbab8c, 2px 2px #bbab8c, 3px 3px #bbab8c;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+}
+.box_2 {
+  width: 460px;
+  border-radius: 25px;
+  float: inline-end;
+  background-color: #ead7bb;
+  margin: 120px 5px 5px 5px;
+  padding: 15px 15px;
+}
+.box_2:hover {
+  box-shadow: 1px 1px #bbab8c, 2px 2px #bbab8c, 3px 3px #bbab8c;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+}
+h2,
+p {
+  padding-left: 20px;
+}
+
+a:link {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .img1 {
+    width: 90%;
+    height: auto;
+    float: none;
+    margin-right: 0;
+    border-radius: 40px;
+  }
+
+  .text1,
+  .text {
+    width: 80%;
+    padding-top: 0;
+    margin: 5px 0;
+  }
+
+  .box_1,
+  .box_2 {
+    width: 80%;
+  }
+}
+
+.floating-button {
+  position: absolute;
+  bottom: 360px;
+  right: 600px;
+  background-color: #ded0b6;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 50%;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+}
+
+.floating-button:hover {
+  box-shadow: 2px 2px #bbab8c, 3px 3px #bbab8c, 4px 4px #bbab8c;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+}
