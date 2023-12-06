@@ -8,10 +8,10 @@
     --fonte-primaria: "mooli", sans-serif;
     --fonte-secundaria: "Montserrat", sans-serif;
     --fonte-terciaria: "Arial", Helvetica, sans-serif;
-  
-  fonte-secundaria - h1
-  fonte-terciaria - nav
-  fonte-primaria - nos elementos p
+    
+    fonte-secundaria - h1
+    fonte-terciaria - nav
+    fonte-primaria - nos elementos p
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@600&family=Mooli&display=swap");

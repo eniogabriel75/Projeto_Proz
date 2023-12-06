@@ -1,12 +1,14 @@
 /* Fonte padrão */
 @import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@600&family=Mooli&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
 /* CSS padrão geral de todas as páginas */
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Krona One", sans-serif;
-  background-color: #fff2d8;
+  font-family: "mooli", sans-serif;
+  background-color: #fdf7e4;
 }
 .container {
   max-width: 1100px;
@@ -15,7 +17,6 @@ body {
   display: grid;
   gap: 24px;
 }
-
 ul,
 ol {
   list-style: none;
@@ -36,6 +37,7 @@ img {
 /* CSS padrão do Header */
 
 nav {
+  font-family: "Krona One", sans-serif;
   background-color: #ead7bb;
   margin: auto;
   padding: 10px 10px;
@@ -58,7 +60,6 @@ nav a:link {
 nav a:visited {
   color: inherit;
 }
-
 nav ul li {
   font-size: 22px;
   display: inline-block;
@@ -67,18 +68,25 @@ nav ul li {
   padding-right: 5px;
   margin-left: 5px;
 }
-/* CSS padrão do Footer */
+nav ul li:last-child {
+  border-right: none;
+}
+nav ul {
+  padding: 0;
+  text-align: center;
+}
 
+/* CSS padrão do Footer */
 footer {
+  height: 40px;
   background-color: #ead7bb;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2em 15px;
-  border-radius: 10px;
+  padding: 0px 15px;
 }
 footer p {
   font-size: 12px;
-  padding: 2px 20px;
-  margin: 1em;
+  padding: 0px 20px;
+  margin: 0px 20px;
 }
