@@ -11,6 +11,9 @@
     />
     <link rel="stylesheet" href="./css/padrao.css" />
     <link rel="stylesheet" href="./css/home.css" />
+    <script src="js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <title>Dra. Moura Estética e Saúde Integrativa</title>
   </head>
   <body>
@@ -23,12 +26,12 @@
           height="100px"
         />
         <ul>
-          <li class="current"><a href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="procedimentos.html">Procedimentos</a></li>
           <li><a href="contato.html">Contato</a></li>
           <li><a href="quemsomos.html">Quem Somos</a></li>
           <li><a href="profissionais.html"> Nossos Profissionais</a></li>
-          <li><a href="localizacao.html">Localizacao</a></li>
+          <li><a href="localizacao.html">Localização</a></li>
         </ul>
       </nav>
           
@@ -42,14 +45,45 @@
         </h3>
       </section>
       <section>
-        <img src="imagens/dra.jpg" alt="Imagem da profissional" class="img1" />
+        <img
+          width="100%"
+          src="imagens/dra.jpg"
+          alt="Imagem da profissional"
+          class="img1"
+        />
         <h1 class="text1">Sobre a profissional</h1>
         <h3 class="text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur,
           temporibus cum? Illum nostrum eum saepe.
         </h3>
       </section>
-      <a href="agendamento.html" class="floating-button">Agendar</a>
+      <aside>
+        <button id="open-modal" class="floating-button">Agendar</button>
+        <div id="fade" class="hide"></div>
+        <div id="modal" class="hide">
+          <div class="modal-header">
+            <h2>Preencha para o agendamento</h2>
+            <button id="close-modal">Fechar</button>
+          </div>
+          <div class="modal-body">
+            <form id="simple-form">
+              <label for="name">Nome:</label>
+              <input type="text" id="name" name="name" />
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" />
+
+              <label for="phone">Telefone:</label>
+              <input type="tel" id="phone" name="phone" />
+
+              <label for="date">Data:</label>
+              <input type="date" id="date" name="date" required />
+
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </aside>
       <section class="boxes">
         <section class="box_1">
           <h2>Nossos procedimentos</h2>
