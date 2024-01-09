@@ -24,9 +24,9 @@
 .cabecalho_menu__link {
   padding: 10px 0px 0px 20px;
   font-family: var(--fonte-terciaria);
-  font-size: 1.5rem; /*tamanho fonte links*/
-  font-weight: 600; /*peso da fonte*/
-  text-decoration: none; /*remove sublinhado links*/
+  font-size: 1.5rem;
+  font-weight: 600; 
+  text-decoration: none; 
   color: black;
 }
 
@@ -38,7 +38,7 @@
   text-align: justify;
   display: flex;
   align-items: center;
-  text-indent: 70px; /*Espaçador primeira palavra*/
+  text-indent: 70px;
 }
 
 .apresentacao__conteudo__div {
@@ -50,24 +50,24 @@
 }
 
 .apresentacao__conteudo__section {
-  padding: 10px; /*Relativo aos Elementos*/
-  width: 45%; /*tamanho da imagem*/
+  padding: 10px;
+  width: 45%; 
   display: flex;
-  gap: 30px; /*distancia entre os itens*/
+  gap: 30px; 
 }
 
 .apresentacao__img {
-  border-radius: 50%; /*arredondamento da imagem*/
-  width: 200px; /*largura da imagem*/
-  height: 200px; /*Altura da imagem*/
-  border: solid 1px rgb(76, 72, 72); /*borda ao redor da imagem*/
+  border-radius: 50%; 
+  width: 200px; 
+  height: 200px;
+  border: solid 1px rgb(76, 72, 72);
 }
 
 .apresentacao__conteudo__h3 {
-  font-family: var(--fonte-primaria); /*estilo da fonte*/
-  text-align: justify; /*alinhamento do texto*/
-  font-size: 1.3rem; /*Tamanho da fonte*/
-  font-weight: 5000; /*peso da fonte*/
+  font-family: var(--fonte-primaria);
+  text-align: justify;
+  font-size: 1.3rem;
+  font-weight: 5000;
   padding: 0px;
   margin: 35px 0px 0px 0px;
 }
