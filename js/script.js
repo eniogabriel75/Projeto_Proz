@@ -20,7 +20,7 @@ const handleFormSubmit = async (event) => {
     Swal.fire({
       icon: "error",
       title: "Erro",
-      text: "Por favor, preencha todos os campos obrigatórios.",
+      text: "Por favor, preencha todos os campos.",
     });
     return;
   }
@@ -43,3 +43,8 @@ const handleFormSubmit = async (event) => {
 });
 
 simpleForm.addEventListener("submit", handleFormSubmit);
+/*Menu pequeno*/
+function toggleMenu() {
+  var menu = document.getElementById("menu");
+  menu.classList.toggle("active");
+}
