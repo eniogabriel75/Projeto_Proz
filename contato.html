@@ -3,9 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/padrao.css">
-    <link rel="stylesheet" href="css/contato.css">
+    <script src="/js/contato.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="/css/contato.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/padrao.css">
+    <link rel="stylesheet" href="/css/modal.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Maven+Pro&family=Roboto&display=swap" rel="stylesheet">
@@ -15,22 +18,21 @@
   <body>
     <header>
       <nav>
-        <img
-          src="imagens/logo.png"
-          alt="Logo clinica"
-          width="100px"
-          height="100px"
-        />
-        <ul>
-          <li class="current"><a href="index.html">Home</a></li>
+        <img src="imagens/logo.png" alt="Logo clinica" width="100px" height="100px"/>
+        <section class="menu-icon" onclick="toggleMenu()">
+          <section class="bar"></section>
+          <section class="bar"></section>
+          <section class="bar"></section>
+        </section>
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
           <li><a href="procedimentos.html">Procedimentos</a></li>
           <li><a href="contato.html">Contato</a></li>
           <li><a href="quemsomos.html">Quem Somos</a></li>
-          <li><a href="profissionais.html"> Nossos Profissionais</a></li>
-          <li><a href="localizacao.html">Localizacao</a></li>
+          <li><a href="profissionais.html">Nossos Profissionais</a></li>
+          <li><a href="localizacao.html">Localização</a></li>
         </ul>
       </nav>
-          
     </header>
     <div>
       <div class="contato">
@@ -41,19 +43,38 @@
         <p class="info-contato">(+55) XX XXXXX-XXXX</p>
         <p class="tipo-contato">Endereço: </p> 
         <p class="info-contato">Aracaju - Sergipe</p>
-      </div>
+      </div>  
+      
+      
+
       <div class="chamadaAgendamento">
-        <span class="chamada-Agenda">Agende uma consulta gratuita!</span>
+        <span class="btn-outline-sucess" onclick="abrirModal('visModal')">Agende uma consulta gratuita!</span>
       </div>
       <div class="info-horarios">
         <h2 class="horaFunciona">Horário de Funcionamento: </h2>
         <p class="horarios">Segunda à Sexta - 07:00 às 20:00</p><br>
         <p class="horarios">Sábado - 07:00 às 13:00</p> 
       </div>
+
+      <!-- Aqui abaixo está a parte da janela Modal -->
+
+      <div id="visModal" class="modal">
+        <div class="conteudoModal">
+          <div class="cabecalhoModal">
+            <h1>Deseja realizar um agendamento?</h1>
+            <span class="modalCabecalhoFechado" onclick="fecharModal('visModal')">&#215;</span>
+          </div>
+          <div class="corpoModal">
+          </div>
+          <div class="rodapeModal">
+            <button class="btn-outline-sucess" onclick="fecharModal('visModal')">Fechar</button>
+          </div>
+        </div>
+      </div>
+      <!-- rodapé -->
       <p class="slogan">Estética e Saúde - Beleza que se sente!</p>
     </div>
     </div>
-    
     <footer>
       <p>
         Privacy Policy |​ Cookie Preferences | Copyright @2024 | Dra. Moura

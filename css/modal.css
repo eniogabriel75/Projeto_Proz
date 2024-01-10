@@ -1,0 +1,69 @@
+.btn-outline-sucess {
+    background-color: #BBAB8C;
+    color: var(--cor-primaria);
+    padding: 1em 2em;
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 100%;
+    transition: all .3s ease; 
+    font-family: var(--fonte-secundaria);
+    font-weight: 700;
+    line-height: 1.5rem;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.09em;
+    margin-top: 10rem;
+}
+
+.btn-outline-sucess:hover{
+    background-color: #BBAB8C;
+    color: aliceblue;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
+.conteudoModal{
+    margin: 0 auto;
+    margin-top: 3px;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cabecalhoModal{
+    padding: 1px 8px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+}
+
+.conteudoModal h1{
+    font: bolder;
+    margin: 10px 0;
+}
+
+.modalCabecalhoFechado{
+    padding: 20px 10px;
+    cursor: pointer;
+}
+
+.corpoModal{
+    padding: 1px 8px 8px 8px;
+}
+
+.rodapeModal{
+    border-top: 1x solid #eee;
+    padding: 8px;
+}
