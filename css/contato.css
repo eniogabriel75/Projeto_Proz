@@ -1,58 +1,54 @@
 :root {
-    --cor-primaria: #FDF7E4;
-    --cor-secundaria: #ead7bb;
-    --cor-terciaria: #DED0B6;
-    --cor-quartenaria: #BBAB8C;
-    --cor-hover: #0F0F0F;
+  --cor-primaria: #fdf7e4;
+  --cor-secundaria: #ead7bb;
+  --cor-terciaria: #ded0b6;
+  --cor-quartenaria: #bbab8c;
+  --cor-hover: #0f0f0f;
 
-    --fonte-primaria: "mooli", sans-serif;
-    --fonte-secundaria: "Montserrat", sans-serif;
-    --fonte-terciaria: "Arial", Helvetica, sans-serif;
-    
-    fonte-secundaria - h1
-    fonte-terciaria - nav
-    fonte-primaria - nos elementos p
+  --fonte-primaria: "mooli", sans-serif;
+  --fonte-secundaria: "Montserrat", sans-serif;
+  --fonte-terciaria: "Arial", Helvetica, sans-serif;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@600&family=Mooli&display=swap");
 
 .contato {
-   width: 45rem;
-   height: 36rem;
-   background-color: #BBAB8C;
-   border-radius: 3rem;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   gap: 2.5rem;
-   margin: 8rem auto;
-   padding: 0.5rem;
-   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+  width: 45rem;
+  height: 36rem;
+  background-color: #bbab8c;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin: 8rem auto;
+  padding: 0.5rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .contato > .titulo-contato {
-    color: #333;
-    text-align: center;
-    font-family: var(--fonte-primaria);
-    font-size: 3rem;
-    font-weight: 700;
+  color: #333;
+  text-align: center;
+  font-family: var(--fonte-primaria);
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 .contato > .tipo-contato {
-    color: #000;
-    text-align: center;
-    font-family: Inter;
-    font-size: 1.5rem;
-    font-weight: 500;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .contato > .info-contato {
-    color: #0F0F0F;
-    text-align: center;
-    font-family: Inter;
-    font-size: 2.5rem;
-    font-weight: 700;
+  color: #0f0f0f;
+  text-align: center;
+  font-family: Inter;
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 /* 
 
@@ -103,59 +99,57 @@ body div h4 {
 */
 
 .chamadaAgendamento {
-    font-family: var(--fonte-secundaria);
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 1.5rem;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.05em;
-    margin-top: 10rem;
+  font-family: var(--fonte-secundaria);
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin-top: 10rem;
 }
 
 .chamada-Agenda {
-    padding: 1.5rem;
-    border: 1px solid #FDF7E4;
-    border-radius: 10rem;
-    background-color: #ead7bb;
-    font-family: var(--fonte-primaria);
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+  padding: 1.5rem;
+  border: 1px solid #fdf7e4;
+  border-radius: 10rem;
+  background-color: #ead7bb;
+  font-family: var(--fonte-primaria);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .horaFunciona {
-    margin-bottom: 3rem;
-    font-family: var(--fonte-secundaria);
+  margin-bottom: 3rem;
+  font-family: var(--fonte-secundaria);
 }
 
 .info-horarios {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.05em;
-    margin: auto;
-    margin-bottom: 5em;
-    margin-top: 9em;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin: auto;
+  margin-bottom: 5em;
+  margin-top: 9em;
 }
 .horarios {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-top: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
 }
 
 .slogan {
-    letter-spacing: 0.05em;
-    margin-top: 10rem;
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content: center;
-    font-family: var(--fonte-terciaria);
-    font-size: 2.5rem;
-    font-weight: 600;
-
+  letter-spacing: 0.05em;
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  font-family: var(--fonte-terciaria);
+  font-size: 2.5rem;
+  font-weight: 600;
 }
 
 .logo {
-    width: 10rem;
-    max-width: 12rem;
-
-} 
+  width: 10rem;
+  max-width: 12rem;
+}
