@@ -12,11 +12,11 @@
 }
 
 h1 {
-  padding: 10px 100px;
+  padding: 50px 75px 20px;
 }
 
 h2 {
-  padding: 10px 100px;
+  padding: 50px 100px 20px;
 }
 .cabecalho {
   padding: 25px;
@@ -57,7 +57,7 @@ h2 {
 }
 
 .apresentacao__conteudo__section {
-  padding: 10px;
+  padding: 30px;
   width: 45%;
   display: flex;
   gap: 30px;
@@ -104,14 +104,14 @@ h2 {
 
   .apresentacao__conteudo_P {
     font-size: 1rem;
-    padding: 10px 20px;
+    padding: 5px 20px;
     display: block;
   }
 
   .apresentacao__conteudo__section {
     display: block;
     width: 100%;
-    padding: 0;
+    padding: 0 0 30px;
   }
 
   .apresentacao__conteudo__div {
@@ -132,7 +132,12 @@ h2 {
     margin: 0 auto;
   }
 
+  h1 {
+    padding: 30px 75px;
+  }
+
   h2 {
+    padding: 30px 75px 30px 100px;
     font-size: 15px;
   }
 }
