@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+
 :root {
   --fonte-primaria: "mooli", sans-serif;
   --fonte-secundaria: "Montserrat", sans-serif;
@@ -9,14 +12,6 @@
 * {
   padding: 0px;
   margin: 0px;
-}
-
-h1 {
-  padding: 50px 75px 20px;
-}
-
-h2 {
-  padding: 50px 100px 20px;
 }
 
 .cabecalho {
@@ -64,6 +59,13 @@ h2 {
   gap: 30px;
 }
 
+.apresentacao__img {
+  border-radius: 50%; 
+  width: 200px; 
+  height: 200px; 
+  border: solid 1px rgb(76, 72, 72);
+}
+
 .apresentacao__conteudo__h3 {
   font-family: var(--fonte-primaria);
   text-align: justify;
@@ -93,13 +95,18 @@ h2 {
   margin: 10px;
 }
 
-.container {
-  display: inline;
+h1 {
+  padding: 10px 100px;
 }
 
-@media screen and (max-width: 1020px) {
-  .container {
-    padding: 10px;
+h2{
+  padding: 10px 100px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .container{
+    width: 90%;
   }
 
   .apresentacao__conteudo_P {
@@ -131,22 +138,13 @@ h2 {
     margin-right: 0;
   }
 
-  h1 {
-    padding: 30px 140px 0;
+  .div__imagem__clinica {
+  width: 80%;
+  display: block;
   }
 
   h2 {
     padding: 30px 75px 0 100px;
     font-size: 15px;
-  }
-
-  footer {
-    height: 100%;
-  }
-
-  footer p {
-    padding: 0;
-    margin: 0;
-    font-size: 10px;
   }
 }
