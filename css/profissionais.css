@@ -21,6 +21,7 @@ h1 {
 h2 {
   padding: 50px 100px 20px;
 }
+
 .cabecalho {
   padding: 25px;
 }
@@ -101,9 +102,10 @@ h2 {
 }
 
 @media screen and (max-width: 1020px) {
-  .container {
-    padding: 10px;
-  }
+  
+    .container {
+      width: 90%;
+    }
 
   .apresentacao__conteudo_P {
     font-size: 1rem;
