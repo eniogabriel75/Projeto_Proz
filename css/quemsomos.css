@@ -107,13 +107,13 @@ h2 {
 }
 
 .sombra-imagem-esquerda-baixo {
-  box-shadow: -3px 4px 8px #c553c7;
+  box-shadow: -3px 4px 8px #bbab8c;
   transition: box-shadow 0.3s ease;
   border-radius: 20px;
 }
 
 .sombra-imagem-direita-baixo {
-  box-shadow: 3px 4px 8px #c553c7;
+  box-shadow: 3px 4px 8px #bbab8c;
   transition: box-shadow 0.3s ease;
   border-radius: 20px;
 }
