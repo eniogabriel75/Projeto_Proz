@@ -5,42 +5,184 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/padrao.css" />
     <link rel="stylesheet" href="./css/procedimentos.css" />
+    <script src="./js/procedimentos.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <title>Dra. Moura Estética e Saúde Integrativa</title>
   </head>
   <body>
     <header>
       <nav>
-        <img src="imagens/logo.png" alt="Logo Clínica" width="100" />
-        <ul>
+        <img
+          src="imagens/logo.png"
+          alt="Logo clinica"
+          width="100px"
+          height="100px"
+        />
+        <section class="menu-icon" onclick="toggleMenu()">
+          <section class="bar"></section>
+          <section class="bar"></section>
+          <section class="bar"></section>
+        </section>
+        <ul id="menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="procedimentos.html">Procedimentos</a></li>
           <li><a href="contato.html">Contato</a></li>
           <li><a href="quemsomos.html">Quem Somos</a></li>
+          <li><a href="profissionais.html">Nossos Profissionais</a></li>
           <li><a href="localizacao.html">Localização</a></li>
         </ul>
       </nav>
     </header>
     <main class="container">
       <h1 class="h1">Conheça os nossos procedimentos!</h1>
-      <div class="imag">
-        <div class="botox">
-          <h2 class="h2">Toxina Botulinica</h2>
-          <img src="imagens/botox.jpg" />
-          <p class="conteudo">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Exercitationem commodi et labore laborum perferendis a!
-          </p>
-        </div>
-        <div class="gluteo">
-          <h2 class="h2">Harmonização de Glúteo</h2>
+      <section class="imag-goup">
+        <section class="procedure-pair">
+          <section class="botox">
+            <h2 class="h2">Toxina Botulinica</h2>
+            <img src="imagens/botox.jpg" />
+            <p class="conteudo">
+              A Toxina Botulínica é uma neurotoxina derivada da bactéria
+              Clostridium botulinum. Este composto notável é amplamente
+              reconhecido por sua capacidade de induzir um relaxamento
+              temporário dos músculos, sendo amplamente utilizado em
+              procedimentos estéticos para atenuar rugas faciais e linhas de
+              expressão.
+            </p>
+          </section>
+          <section class="gluteo">
+            <h2 class="h2">Harmonização de Glúteo</h2>
 
-          <img src="imagens/gluteo.jpg" />
-          <p class="conteudo">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-            pariatur, at ipsa expedita totam qui consectetur dignissimos.
-          </p>
-        </div>
-      </div>
+            <img src="imagens/gluteo.jpg" />
+            <p class="conteudo">
+              A harmonização de glúteo é um procedimento estético que visa
+              melhorar a aparência e simetria dos glúteos, promovendo um
+              contorno mais atraente e natural. Diferentemente de procedimentos
+              cirúrgicos mais invasivos, como o aumento de glúteos com implantes
+              ou enxertos de gordura.
+            </p>
+          </section>
+        </section>
+        <section class="procedure-pair">
+          <section class="agulha">
+            <h2 class="h2">Microagulhamento</h2>
+            <img src="imagens/agulha.png" />
+            <p class="conteudo">
+              O microagulhamento é um procedimento estético minimamente invasivo
+              que utiliza um dispositivo com pequenas agulhas para criar
+              microperfurações na pele. Esse processo estimula a produção de
+              colágeno e promove a regeneração da pele, resultando em uma
+              textura mais suave e uma aparência rejuvenescida.
+            </p>
+          </section>
+          <section class="drenagem">
+            <h2 class="h2">Drenagem Linfática</h2>
+            <img src="imagens/drenagemL.png" />
+            <p class="conteudo">
+              A drenagem linfática tem como objetivo principal melhorar a
+              circulação linfática, promovendo a eliminação de excesso de
+              líquidos e resíduos metabólicos. Isso pode resultar em benefícios
+              como a redução de inchaços, melhora na circulação sanguínea e
+              relaxamento muscular.
+            </p>
+          </section>
+        </section>
+        <section class="procedure-pair">
+          <section class="harmonizacaoF">
+            <h2 class="h2">Harmonização Facial</h2>
+            <img src="imagens/harmonizacaoF.png" />
+            <p class="conteudo">
+              A harmonização facial é um conjunto de procedimentos estéticos não
+              cirúrgicos que visa promover uma aparência mais equilibrada e
+              simétrica do rosto. Essa abordagem busca realçar os traços
+              naturais e proporcionar um resultado estético globalmente
+              harmonioso.
+            </p>
+          </section>
+          <section class="labio">
+            <h2 class="h2">Preenchimento Labial</h2>
+            <img src="imagens/labio.png" />
+            <p class="conteudo">
+              O preenchimento labial é um procedimento estético popular que visa
+              melhorar o volume e a forma dos lábios, proporcionando uma
+              aparência mais cheia e simétrica. Este procedimento é comumente
+              realizado através da injeção de substâncias preenchedoras.
+            </p>
+          </section>
+        </section>
+        <section class="procedure-pair">
+          <section class="massagem">
+            <h2 class="h2">Massagem Modeladora</h2>
+            <img src="imagens/massag.png" />
+            <p class="conteudo">
+              A massagem modeladora é uma técnica de massagem que visa remodelar
+              o corpo, melhorar a circulação sanguínea e reduzir medidas através
+              de movimentos vigorosos e manobras específicas.
+            </p>
+          </section>
+          <section class="peeling">
+            <h2 class="h2">Peeling Químico</h2>
+            <img src="imagens/peeling.png" />
+            <p class="conteudo">
+              O peeling químico é um procedimento estético que utiliza
+              substâncias químicas para esfoliar a camada superficial da pele,
+              promovendo a renovação celular e melhorando a textura da pele.
+            </p>
+          </section>
+        </section>
+        <section class="procedure-pair">
+          <section class="preencF">
+            <h2 class="h2">Preenchimento Facial</h2>
+            <img src="imagens/preenchF.png" />
+            <p class="conteudo">
+              A Toxina Botulínica é uma neurotoxina derivada da bactéria
+              Clostridium botulinum. Este composto notável é amplamente
+              reconhecido por sua capacidade de induzir um relaxamento
+              temporário dos músculos, sendo amplamente utilizado em
+              procedimentos estéticos para atenuar rugas faciais e linhas de
+              expressão.
+            </p>
+          </section>
+          <section class="skin">
+            <h2 class="h2">SkinBooster</h2>
+            <img src="imagens/skinB.png" />
+            <p class="conteudo">
+              O skinbooster é um tratamento estético que envolve a injeção de
+              substâncias hidratantes, como ácido hialurônico, na camada
+              superficial da pele para melhorar a hidratação, a textura e a
+              luminosidade. Este procedimento é projetado para revitalizar a
+              pele, proporcionando um aspecto mais saudável e jovem.
+            </p>
+          </section>
+        </section>
+        <aside>
+          <button id="open-modal" class="floating-button">Agendar</button>
+          <section id="fade" class="hide"></section>
+          <section id="modal" class="hide">
+            <section class="modal-header">
+              <h2>Preencha para o agendamento</h2>
+              <button id="close-modal">Fechar</button>
+            </section>
+            <section class="modal-body">
+              <form id="simple-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" />
+
+                <label for="phone">Telefone:</label>
+                <input type="tel" id="phone" name="phone" required />
+
+                <label for="date">Data:</label>
+                <input type="date" id="date" name="date" required />
+
+                <button type="submit">Enviar</button>
+              </form>
+            </section>
+          </section>
+        </aside>
+      </section>
     </main>
   </body>
   <footer>

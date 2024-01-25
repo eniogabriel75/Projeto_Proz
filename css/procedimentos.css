@@ -3,32 +3,206 @@ h1 {
   font-family: "mooli", sans-serif;
   margin-left: 250px;
 }
+
 main img {
   width: 600px;
   height: 400px;
 }
+.imag-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
 
-.imag {
+.procedure-pair {
+  display: flex;
+  gap: 20px;
+}
+
+.botox,
+.gluteo,
+.agulha,
+.drenagem,
+.harmonizacaoF,
+.labio,
+.massagem,
+.peeling,
+.preencF,
+.skin {
+  flex: 1;
+  border-radius: 25px;
+}
+
+.botox img,
+.gluteo img,
+.agulha img,
+.drenagem img,
+.harmonizacaoF img,
+.labio img,
+.massagem img,
+.peeling img,
+.preencF img,
+.skin img {
+  border-radius: 25px;
+}
+
+/* Adicione estilos semelhantes para as outras seções */
+
+@media screen and (max-width: 768px) {
+  .procedure-pair {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .procedure-pair section {
+    margin-bottom: 20px;
+  }
+}
+
+/* Adicione estilos semelhantes para as outras seções */
+
+footer {
+  margin-top: 80px;
+}
+
+#open-modal {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ded0b6;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  font-size: 25px;
+  border-color: #ded0b6;
+}
+
+@media screen and (max-width: 768px) {
+  #open-modal {
+    bottom: 10px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    font-size: 14px;
+  }
+
+  #modal {
+    width: 90%;
+  }
+}
+
+button:hover {
+  opacity: 1;
+}
+
+#fade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 5;
+}
+
+#modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  max-width: 90%;
+  background-color: #fff;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  z-index: 10;
+}
+
+#fade,
+#modal {
+  transition: 0.5s;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: auto;
-  padding: 25px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
-.botox {
-  margin-right: 20px;
-  border-radius: 20px;
+.modal-body {
+  margin-top: 1rem;
 }
-.botox img {
-  border-radius: 25px;
+
+form {
+  display: flex;
+  flex-direction: column;
 }
-.gluteo {
-  margin-left: 20px;
+
+label {
+  margin-bottom: 0.5rem;
 }
-.gluteo img {
-  border-radius: 25px;
+
+form input,
+form button {
+  margin-bottom: 1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.25rem;
 }
-footer {
-  margin-top: 80px;
+
+#modal.hide,
+#fade.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#modal.hide {
+  top: 0;
+}
+
+.floating-button:hover {
+  opacity: 1;
+  box-shadow: 2px 2px #bbab8c, 3px 3px #bbab8c, 4px 4px #bbab8c;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  main img {
+    width: 100%;
+    height: auto;
+  }
+
+  .imag-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imag-group section {
+    margin-bottom: 20px;
+  }
+
+  #open-modal {
+    bottom: 10px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    font-size: 14px;
+  }
+
+  #modal {
+    width: 90%;
+  }
 }
