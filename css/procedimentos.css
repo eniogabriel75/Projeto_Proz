@@ -8,34 +8,57 @@ main img {
   width: 600px;
   height: 400px;
 }
-
 .imag-group {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin: auto;
-  padding: 25px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
-.imag-group section {
+.procedure-pair {
+  display: flex;
+  gap: 20px;
+}
+
+.botox,
+.gluteo,
+.agulha,
+.drenagem,
+.harmonizacaoF,
+.labio,
+.massagem,
+.peeling,
+.preencF,
+.skin {
   flex: 1;
-}
-
-.botox {
-  margin-right: 20px;
-  border-radius: 20px;
-}
-
-.botox img {
   border-radius: 25px;
 }
 
-.gluteo {
-  margin-left: 20px;
+.botox img,
+.gluteo img,
+.agulha img,
+.drenagem img,
+.harmonizacaoF img,
+.labio img,
+.massagem img,
+.peeling img,
+.preencF img,
+.skin img {
+  border-radius: 25px;
 }
 
-.gluteo img {
-  border-radius: 25px;
+/* Adicione estilos semelhantes para as outras seções */
+
+@media screen and (max-width: 768px) {
+  .procedure-pair {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .procedure-pair section {
+    margin-bottom: 20px;
+  }
 }
 
 /* Adicione estilos semelhantes para as outras seções */
