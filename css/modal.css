@@ -1,69 +1,105 @@
-.btn-outline-sucess {
-    background-color: #BBAB8C;
-    color: var(--cor-primaria);
-    padding: 1em 2em;
-    border: 2px solid var(--cor-terciaria);
-    border-radius: 2rem;
-    cursor: pointer;
-    font-size: 100%;
-    transition: all .3s ease; 
-    font-family: var(--fonte-secundaria);
-    font-weight: 700;
-    line-height: 1.5rem;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.09em;
-    margin-top: 10rem;
+#open-modal {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ded0b6;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  font-size: 25px;
+  border-color: #ded0b6;
 }
 
-.btn-outline-sucess:hover{
-    background-color: #BBAB8C;
-    color: aliceblue;
+@media screen and (max-width: 768px) {
+  #open-modal {
+    bottom: 10px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    font-size: 14px;
+  }
+
+  #modal {
+    width: 90%;
+  }
+}
+button:hover {
+  opacity: 1;
 }
 
-.modal {
-    background-color: rgba(0, 0, 0, 0.5);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: none;
+#fade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 5;
 }
 
-.conteudoModal{
-    margin: 0 auto;
-    margin-top: 3px;
-    max-width: 600px;
-    background-color: #fff;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+#modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  max-width: 90%;
+  background-color: #fff;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  z-index: 10;
 }
 
-.cabecalhoModal{
-    padding: 1px 8px;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #eee;
+#fade,
+#modal {
+  transition: 0.5s;
+  opacity: 1;
+  pointer-events: all;
 }
 
-.conteudoModal h1{
-    font: bolder;
-    margin: 10px 0;
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
-.modalCabecalhoFechado{
-    padding: 20px 10px;
-    cursor: pointer;
+.modal-body {
+  margin-top: 1rem;
 }
 
-.corpoModal{
-    padding: 1px 8px 8px 8px;
+form {
+  display: flex;
+  flex-direction: column;
 }
 
-.rodapeModal{
-    border-top: 1x solid #eee;
-    padding: 8px;
+label {
+  margin-bottom: 0.5rem;
+}
+
+form input,
+form button {
+  margin-bottom: 1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.25rem;
+}
+
+#modal.hide,
+#fade.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#modal.hide {
+  top: 0;
+}
+
+.floating-button:hover {
+  opacity: 1;
+  box-shadow: 2px 2px #bbab8c, 3px 3px #bbab8c, 4px 4px #bbab8c;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
 }

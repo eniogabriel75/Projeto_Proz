@@ -13,8 +13,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@600&family=Mooli&display=swap");
 
 .contato {
-  width: 45rem;
-  height: 36rem;
+  font-family: var(--fonte-primaria);
+  width: 600px;
+  height: 550px;
   background-color: #bbab8c;
   border-radius: 3rem;
   display: flex;
@@ -47,8 +48,8 @@
   color: #0f0f0f;
   text-align: center;
   font-family: Inter;
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-size: 45px;
+  font-weight: 600;
 }
 
 .chamadaAgendamento {
@@ -105,4 +106,26 @@
 .logo {
   width: 10rem;
   max-width: 12rem;
+}
+
+@media screen and (max-width: 768px) {
+  .contato {
+    width: 90%;
+  }
+
+  .info-horarios > .tipo-contato > .titulo-contato > .info-contato > .slogan {
+    width: 90%;
+    height: auto;
+    float: none;
+    margin-right: 0;
+    text-align: center;
+    justify-content: center;
+    border-radius: 40px;
+  }
+
+  .slogan {
+    width: 80%;
+    padding-top: 0;
+    margin: 5px 0;
+  }
 }
