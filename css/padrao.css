@@ -46,7 +46,7 @@ p {
 #menu li {
   margin-right: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1020px) {
   .menu-icon {
     display: block;
   }
@@ -118,6 +118,19 @@ nav ul li:last-child {
 nav ul {
   padding: 0;
   text-align: center;
+}
+@media screen and (max-width: 1020px) {
+  nav {
+    padding: 10px; /* Ajuste o padding conforme necessário */
+  }
+
+  nav ul {
+    padding: 10px; /* Ajuste o padding conforme necessário */
+  }
+
+  nav ul li {
+    margin: 10px 0; /* Ajuste a margem conforme necessário */
+  }
 }
 
 /* CSS padrão do Footer */

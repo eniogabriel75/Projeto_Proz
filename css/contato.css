@@ -108,12 +108,16 @@
   max-width: 12rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1020px) {
   .contato {
     width: 90%;
   }
 
-  .info-horarios > .tipo-contato > .titulo-contato > .info-contato > .slogan {
+  .info-horarios,
+  .tipo-contato,
+  .titulo-contato,
+  .info-contato,
+  .slogan {
     width: 90%;
     height: auto;
     float: none;
