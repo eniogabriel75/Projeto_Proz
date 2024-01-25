@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Localização</title>
     <link rel="stylesheet" href="./css/padrao.css" />
-    <link rel="stylesheet" href="./css/localizacao.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/localizacao.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <link
       rel="icon"
       type="image/png"
@@ -22,19 +25,24 @@
           width="100px"
           height="100px"
         />
-        <ul>
-          <li class="current"><a href="index.html">Home</a></li>
+        <section class="menu-icon" onclick="toggleMenu()">
+          <section class="bar"></section>
+          <section class="bar"></section>
+          <section class="bar"></section>
+        </section>
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
           <li><a href="procedimentos.html">Procedimentos</a></li>
           <li><a href="contato.html">Contato</a></li>
           <li><a href="quemsomos.html">Quem Somos</a></li>
-          <li><a href="profissionais.html"> Nossos Profissionais</a></li>
+          <li><a href="profissionais.html">Nossos Profissionais</a></li>
           <li><a href="localizacao.html">Localização</a></li>
         </ul>
       </nav>
     </header>
     <main class="mainLocalizacao">
       <h1>Localização</h1>
-      <p id="title"></p>
+      <p>Aqui temos informações da localização da nossa clínica</p>
       <img src="imagens/mapaLocalizacao.PNG" alt="imgLocalizacaoMapa" />
       <p>Você pode clicar no botão abaixo para nos encontrar no Google Maps!</p>
       <a
@@ -42,6 +50,33 @@
         target="_blank"
         ><button class="buttonLocalizacao">Localizar</button></a
       >
+      <aside>
+        <button id="open-modal" class="floating-button">Agendar</button>
+        <section id="fade" class="hide"></section>
+        <section id="modal" class="hide">
+          <section class="modal-header">
+            <h2>Preencha para o agendamento</h2>
+            <button id="close-modal">Fechar</button>
+          </section>
+          <section class="modal-body">
+            <form id="simple-form">
+              <label for="name">Nome:</label>
+              <input type="text" id="name" name="name" />
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" />
+
+              <label for="phone">Telefone:</label>
+              <input type="tel" id="phone" name="phone" required />
+
+              <label for="date">Data:</label>
+              <input type="date" id="date" name="date" required />
+
+              <button type="submit">Enviar</button>
+            </form>
+          </section>
+        </section>
+      </aside>
     </main>
     <footer>
       <p>Privacy Policy |​ Cookie Preferences</p>
@@ -52,8 +87,4 @@
           
     </footer>
   </body>
-
-  <script>
-    var titulo = document.getElementById("title").innerHTML = "Aqui temos informações da localização da nossa clínica";
-  </script>
 </html>
