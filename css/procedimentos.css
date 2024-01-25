@@ -3,32 +3,43 @@ h1 {
   font-family: "mooli", sans-serif;
   margin-left: 250px;
 }
+
 main img {
   width: 600px;
   height: 400px;
 }
 
-.imag {
+.imag-group {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin: auto;
   padding: 25px;
+}
+
+.imag-group section {
+  flex: 1;
 }
 
 .botox {
   margin-right: 20px;
   border-radius: 20px;
 }
+
 .botox img {
   border-radius: 25px;
 }
+
 .gluteo {
   margin-left: 20px;
 }
+
 .gluteo img {
   border-radius: 25px;
 }
+
+/* Adicione estilos semelhantes para as outras seções */
+
 footer {
   margin-top: 80px;
 }
@@ -59,6 +70,7 @@ footer {
     width: 90%;
   }
 }
+
 button:hover {
   opacity: 1;
 }
@@ -137,4 +149,37 @@ form button {
   box-shadow: 2px 2px #bbab8c, 3px 3px #bbab8c, 4px 4px #bbab8c;
   -webkit-transform: translateX(-3px);
   transform: translateX(-3px);
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  main img {
+    width: 100%;
+    height: auto;
+  }
+
+  .imag-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imag-group section {
+    margin-bottom: 20px;
+  }
+
+  #open-modal {
+    bottom: 10px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    font-size: 14px;
+  }
+
+  #modal {
+    width: 90%;
+  }
 }
