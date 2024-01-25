@@ -16,9 +16,13 @@
 
 h1 {
   padding: 50px 75px 20px;
+  display: flex;
+  justify-content: center;
 }
 
 h2 {
+  display: flex;
+  justify-content: center;
   padding: 50px 100px 20px;
 }
 

@@ -16,10 +16,14 @@
 
 h1 {
   padding: 50px 75px 20px;
+  display: flex;
+  justify-content: center;
 }
 
 h2 {
   padding: 50px 100px 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .cabecalho {
@@ -111,10 +115,9 @@ img:hover {
 }
 
 @media screen and (max-width: 1020px) {
-  
-    .container {
-      width: 90%;
-    }
+  .container {
+    width: 90%;
+  }
 
   .apresentacao__conteudo_P {
     font-size: 1rem;
@@ -152,7 +155,7 @@ img:hover {
 
   h2 {
     padding: 30px 75px 30px 100px;
-    font-size: 15px;
+    font-size: 20px;
   }
 
   footer {
