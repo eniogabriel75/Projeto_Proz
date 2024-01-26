@@ -110,7 +110,7 @@ h2 {
   height: 200px;
 }
 
-img:hover {
+main img:hover {
   transform: scale(1.2);
 }
 
@@ -126,9 +126,9 @@ img:hover {
   }
 
   .apresentacao_conteudo_section {
-    display: block;
     width: 100%;
     padding: 0 0 30px;
+    display: block;
   }
 
   .apresentacao_conteudo_div {
